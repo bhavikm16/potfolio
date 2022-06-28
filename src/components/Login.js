@@ -7,7 +7,10 @@ import {useSelector,useDispatch} from 'react-redux';
 import {userLogin} from '../slices/userSlice'
 import {useNavigate} from 'react-router-dom'
 import axios from "axios";
-import login from "../images/logo.svg"
+import login from "../images/lg.svg"
+import { FcRight } from "react-icons/fc";
+
+
 function Login() {
   const {register,handleSubmit,formState:{errors}}=useForm()
   const navigate=useNavigate()
@@ -71,8 +74,8 @@ function Login() {
       </Form>
     </div>
     <div className='d-flex justify-content-center'>
-      <h5>Need an account...  </h5>
-      <a href="/Signup"> Sign Up</a>
+      <h5>Need an account... <FcRight /></h5>
+      <a href="/Signup" className='button'> Sign Up</a>
     </div>
     </>
 

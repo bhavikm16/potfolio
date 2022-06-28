@@ -13,8 +13,10 @@ import Template3 from './Template3'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate, Navigate } from 'react-router-dom'
 import { clearLoginStatus } from '../Slices/userSlice'
-
-
+import { FcDiploma2 } from "react-icons/fc";
+import { FcWorkflow } from "react-icons/fc";
+import { FcReading } from "react-icons/fc";
+import "./Header.css"
 function Header() {
   let { userObj, isError, isLoading, isSuccess, errMsg } = useSelector(
     (state) => state.user
@@ -37,18 +39,22 @@ function Header() {
   return (
     <>
 
-      <Navbar collapseOnSelect bg="dark"  variant='dark'>
+      <Navbar collapseOnSelect bg="dark" variant='dark'>
         <Container>
-          <Navbar.Brand>
-         PORTFOLIO FOR YOU!
+          <h2><FcDiploma2 /></h2>
+          <a href="/Landing" className='bootstrap'><Navbar.Brand>
+            PORTFOLIO FOR YOU!
           </Navbar.Brand>
+          </a>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto navbar">
               {isSuccess !== true ? (
                 <>
+                  <h2><FcWorkflow /></h2>
                   {/* These links can be visible when no user logged in */}
                   <Nav.Item>
+
                     <Nav.Link eventKey={1} as={NavLink} to="/">
                       Home
                     </Nav.Link>
@@ -69,6 +75,7 @@ function Header() {
               ) : (
                 <>
                   {/* This dropdown is visible only when a user is logged in */}
+                  <h2><FcReading /></h2>
                   <NavDropdown title={userObj.username} id="collasible-nav-dropdown">
                     <NavDropdown.Item>
                       <Nav.Link as={NavLink} to="/Home" className='text-dark'>

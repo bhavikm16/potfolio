@@ -1,26 +1,32 @@
-.App {
+.A {
     height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/memphis-frame-vector-beige-paper-collage-blue-cute-abstract-background_53876-108787.jpg?w=2000');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+ 
 }
 
-.App-content {
-    height: 50%;
+.Ac {
+  
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-   
     padding: 40px;
 }
 
 
 @media (min-width: 650px ) {
-    .App {
+    .A{
         background-position: center center;
+        
     }
-
-    .App-content {
+    .Ac{
         align-items: flex-end;
         justify-content:space-evenly;
     }
