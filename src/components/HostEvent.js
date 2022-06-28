@@ -2,7 +2,6 @@ import React,{useState} from "react";
 import {useForm} from 'react-hook-form'
 import {Form, Button} from 'react-bootstrap'
 import { useNavigate } from "react-router-dom";
-import { addEvent } from "../Slices/EventSlice";
 import login11 from "../images/logo11.svg"
 import axios from "axios";
 import {useSelector} from 'react-redux'

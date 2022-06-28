@@ -39,7 +39,7 @@ function Header() {
   return (
     <>
 
-      <Navbar collapseOnSelect bg="dark" variant='dark'>
+      <Navbar collapseOnSelect bg="dark" variant='dark' sticky='top'>
         <Container>
           <h2><FcDiploma2 /></h2>
           <a href="/Landing" className='bootstrap'><Navbar.Brand>
