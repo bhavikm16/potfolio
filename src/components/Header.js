@@ -4,6 +4,7 @@ import { Route, Routes, NavLink } from 'react-router-dom'
 import Home from './Home';
 import Landing from './Landing';
 import HostEvent from './HostEvent';
+
 import Login from './Login';
 import Event from './Event';
 import Signup from './Signup';
@@ -105,6 +106,7 @@ function Header() {
         <Route path="/Event" element={<Event />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/template3" element={<Template3 />} />
+
       </Routes>
     </>
   )
