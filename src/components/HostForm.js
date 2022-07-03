@@ -42,7 +42,7 @@ function HostEvent() {
       //console.log(response)
       alert(response.data.message)
       //if user created
-      if(response.data.message==="Event has been successfully created!!"){
+      if(response.data.message==="YOUR FORM HAS BEEN SUBMITTED EXPLORE THE TEMPLATES!!"){
         //navigate to login
         navigate('/Event')
       }
