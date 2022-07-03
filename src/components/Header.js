@@ -3,7 +3,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 import { Route, Routes, NavLink } from 'react-router-dom'
 import Home from './Home';
 import Landing from './Landing';
-import HostEvent from './HostEvent';
+import HostForm from './HostForm';
 
 import Login from './Login';
 import Event from './Event';
@@ -43,7 +43,7 @@ function Header() {
       <Navbar collapseOnSelect bg="dark" variant='dark' sticky='top'>
         <Container>
           <h2><FcDiploma2 /></h2>
-          <a href="/Landing" className='bootstrap'><Navbar.Brand>
+          <a href="/" className='bootstrap'><Navbar.Brand>
             PORTFOLIO FOR YOU!
           </Navbar.Brand>
           </a>
@@ -100,7 +100,7 @@ function Header() {
         <Route path='/' element={<Landing />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/HostEvent" element={<HostEvent />} />
+        <Route path="/HostForm" element={<HostForm />} />
         <Route path="/template1" element={<Template1 />} />
         <Route path="/template2" element={<Template2 />} />
         <Route path="/Event" element={<Event />} />
